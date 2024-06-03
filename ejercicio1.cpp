@@ -25,9 +25,15 @@ float division(int entero1, int entero2){
     return resultado;
 }
 
+double calcula_media(double num1, double num2){
+    double media;
+    media =(num1 + num2)/2;
+    return media;
+}
+
 int main(){
     int n1= 0,n2 = 0, respuesta = 0, respuesta2 = 0, respuesta3 = 0;
-    float respuesta4 = 0.00;
+    float respuesta4 = 0.00, respuesta5 = 0.00;
     n1 = 8;
     n2 = 6;
     
@@ -35,11 +41,14 @@ int main(){
     respuesta2 = resta(n1,n2);
     respuesta3 = multiplicacion (n1,n2);
     respuesta4 = division(n1,n2);
+    respuesta5 = calcula_media(n1,n2);
+
 
     cout << "El valor de la suma de dos numeros enteros es:  "<< respuesta << endl;
     cout << "El valor de la resta de los numeros es: "<< respuesta2 << endl;
     cout << "El valor de la multilplicacion de los numeros es: "<< respuesta3 << endl; 
     cout << "El valor de la division de los numeros es: "<< respuesta4 << endl;
+    cout << "La media de los numeros es: "<< respuesta5 << endl;
 
 
     return 0;
